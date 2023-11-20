@@ -9,6 +9,12 @@ fun main() {
     - Agar lebih mudah, gunakanlah for loop dan logika if untuk mengisi bilangan genap pada list
      */
     // Buat di bawah sini
+    val even = mutableListOf<Int>()
+    for (x   in 1..100) {
+        if (x % 2 ==0) {
+            even.add(x)
+        }
+    }
 
 
     /** Latihan 2 Map
@@ -17,19 +23,36 @@ fun main() {
     - Set Key nya dengan inisial nama bulan dan Value nya nama bulan, contoh
     - key "Jan", value January
     - key "Feb", value February
-    - dst...
+    - dst...*/
     // Buat di bawah sini
+    val monthMap = mapOf(
+        "Jan" to "January",
+        "Feb" to "February",
+        "Mar" to "March",
+        "Apr" to "April",
+        "May" to "May",
+        "Jun" to "June",
+        "Jul" to "July",
+        "Aug" to "August",
+        "Sep" to "September",
+        "Oct" to "October",
+        "Nov" to "November",
+        "Dec" to "December",
+    )
 
-    Cetak semua nama bulan dengan fungsi forEach sehingga hasil output seperti:
+    /**Cetak semua nama bulan dengan fungsi forEach sehingga hasil output seperti:
     - Jan -> January
     - Feb -> February
-    - Dst...
+    - Dst...*/
     // Buat di bawah sini
+    monthMap.forEach { (key, value) ->
+        println("$key -> $value")
+    }
 
-    Cetak nama bulan sekarang dan bulan lahir kamu dengan format string berikut:
-    - "It's {$monthNow} now, I was born in {$birthMonth}"
-     */
+    /**Cetak nama bulan sekarang dan bulan lahir kamu dengan format string berikut:
+    - "It's {$monthNow} now, I was born in {$birthMonth}"*/
     // Buat di bawah sini
-
-
+    val monthNow = "November"
+    val birthMonth = "January"
+    println("It's $monthNow now, I was born in $birthMonth")
 }

@@ -1,12 +1,14 @@
 package id.infinitelearning.KotlinSubmission.exercise5
 
-fun main() {
+
 
     /**
      * Latihan 1
      * Buat variable dengan nama hero dibawah ini dan isi nilai variable tersebut dengan class Hero
      *
      */
+    fun main () {
+    val hero = Hero()
 
 
     /**
@@ -16,6 +18,7 @@ fun main() {
      *
      */
 
+        hero.setProfile("Muhammad Ilham", 20, 186)
 
 
     /**
@@ -24,7 +27,7 @@ fun main() {
      *
      */
 
-
+        hero.profile()
 
     /**
     Challenge:
@@ -66,6 +69,22 @@ fun main() {
      *
      */
 
+        hero.jalan()
+        hero.jalan()
+        hero.jalan()
+        hero.jalan()
+        hero.jalan()
+        hero.lari()
+        hero.lari()
+        hero.makan()
+        hero.makan()
+        hero.makan()
+        hero.minum()
+        hero.lompat()
+        hero.lompat()
+        hero.lompat()
+        hero.duduk()
+
 
 
     /**
@@ -74,6 +93,6 @@ fun main() {
      *
      */
 
-
+        hero.profile()
 
 }

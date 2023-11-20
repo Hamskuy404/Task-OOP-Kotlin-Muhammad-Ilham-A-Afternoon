@@ -10,6 +10,15 @@ Lengkapi fungsi myProfile di bawah ini dengan membuat variabel dengan ketentuan 
 Dan Cetak setiap variabel ke layar saat variable myProfile di panggil
  */
 fun myProfile() {
+    val firstname = "Muhammad"
+    val lastname = "Ilham"
+    val age = 20
+    val single = false
+
+    println(firstname)
+    println(lastname)
+    println(age)
+    println(single)
 
 }
 
@@ -19,6 +28,11 @@ fun myProfile() {
  *  Lengkapi fungsi di bawah ini agar dapat mencetak nilai dari parameter-parameter yang ada dengan fungsi println
  */
 fun groupDetail(groupId: String, groupMember: List<Any>, session: String): Any {
+    println("Group ID = $groupId")
+    println("Group Member = $groupMember")
+    println("Session = $session")
+    for (item in groupMember)
+        println("-$item")
     return ""
 }
 
@@ -29,8 +43,14 @@ fun groupDetail(groupId: String, groupMember: List<Any>, session: String): Any {
  *
  */
 fun myTeam(): List<Any> {
-
-    return listOf()
+    val member = listOf(
+        "Muhammad Ilham",
+        "Delviya Indra Gani",
+        "Bilsyakur Akmeison",
+        "Luqmannul Hakim",
+        "Yusuf Abiyyu Rahman"
+    )
+    return listOf(member[0])
 }
 
 /**
@@ -41,10 +61,15 @@ fun myTeam(): List<Any> {
  *
  */
 fun totalMember(): Int {
-    val mentor = arrayOf<String>()
-    val countOfGroup = arrayOf<String>()
+    val mentor = arrayOf<String>("Kak Raihan", "Kak Fatih")
+    val countOfGroup = arrayOf(
+        "Muhammad Ilham",
+        "Delviya Indra Gani",
+        "Bilsyakur Akmeison",
+        "Luqmannul Hakim",
+        "Yusuf Abiyyu Rahman")
 
-    return 0
+    return mentor.count() + countOfGroup.count()
 }
 
 fun main() {
@@ -62,6 +87,11 @@ fun main() {
      *  Ubah nilai argumen-argumen dari fungsi groupDetail di bawah ini sesuai dengan data group kamu
      *
      */
-    groupDetail("", listOf(), "")
+    groupDetail("4keys", listOf(
+        "Muhammad Ilham",
+        "Delviya Indra Gani",
+        "Bilsyakur Akmeison",
+        "Luqmannul Hakim",
+        "Yusuf Abiyyu Rahman"), "afternoon")
 
 }
